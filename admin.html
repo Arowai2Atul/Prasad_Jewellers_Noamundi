@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f8f3e8">
+  <meta name="description" content="Master Admin — Prasad Jewellers rate management.">
+  <link rel="icon" href="./public/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./src/styles.css">
+  <title>Master Admin | Prasad Jewellers</title>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./index.html" aria-label="Back to Prasad Jewellers">
+      <span class="brand-mark">PJ</span>
+      <span><strong>Master Admin</strong><small>Prasad Jewellers</small></span>
+    </a>
+    <a class="btn btn-quiet admin-back" href="./index.html">Storefront</a>
+  </header>
+
+  <main class="admin-shell">
+    <section class="admin-hero">
+      <span class="eyebrow">Private control room</span>
+      <h1>Update today's<br><em>market rates.</em></h1>
+      <p>Enter the verified Jamshedpur Sarrafa Bhaav once each day. The customer-facing rate board is designed to consume this single structured record.</p>
+    </section>
+
+    <section class="admin-card" aria-labelledby="rate-form-title">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">Master rate entry</span>
+          <h2 id="rate-form-title">Gold &amp; Silver</h2>
+        </div>
+        <span class="admin-status" id="adminStatus">Secure backend pending</span>
+      </div>
+
+      <form id="rateForm" class="rate-form">
+        <label>
+          <span>Source</span>
+          <input name="source" value="Jamshedpur Jewellers Association" required>
+        </label>
+
+        <div class="form-grid">
+          <label><span>24 KT Gold / 10g</span><input name="gold24" type="number" min="0" step="1" inputmode="numeric" value="147400" required></label>
+          <label><span>22 KT Gold / 10g</span><input name="gold22" type="number" min="0" step="1" inputmode="numeric" value="135600" required></label>
+          <label><span>18 KT Gold / 10g</span><input name="gold18" type="number" min="0" step="1" inputmode="numeric" value="111300" required></label>
+          <label><span>14 KT Gold / 10g</span><input name="gold14" type="number" min="0" step="1" inputmode="numeric" value="87800" required></label>
+          <label><span>9 KT Gold / 10g</span><input name="gold9" type="number" min="0" step="1" inputmode="numeric" value="56600" required></label>
+          <label><span>Silver / 10g</span><input name="silver" type="number" min="0" step="1" inputmode="numeric" value="2310" required></label>
+        </div>
+
+        <label>
+          <span>Official update time</span>
+          <input name="updatedAt" type="datetime-local" required>
+        </label>
+
+        <div class="admin-preview" id="adminPreview" aria-live="polite">
+          <span>Preview</span>
+          <strong id="preview24">₹1,47,400</strong>
+          <small>24 KT Gold / 10g</small>
+        </div>
+
+        <button class="btn btn-primary admin-submit" type="submit">Save today's rates</button>
+        <p class="admin-note" id="adminNote">This interface validates and previews the daily record. Persistence will be enabled only after the secure admin database is connected.</p>
+      </form>
+    </section>
+
+    <section class="admin-card admin-rules">
+      <span class="eyebrow">Operating rule</span>
+      <h2>One source. One daily record.</h2>
+      <p>The Master Admin should enter the association's verified figures. Customers see the latest approved record, including its source and exact update time. No rate should be silently guessed or auto-generated.</p>
+    </section>
+  </main>
+
+  <script type="module" src="./src/admin.js"></script>
+</body>
+</html>
