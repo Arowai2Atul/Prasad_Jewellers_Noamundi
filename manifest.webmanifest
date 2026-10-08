@@ -1,0 +1,10 @@
+{
+  "name":"Prasad Jewellers | Noamundi",
+  "short_name":"Prasad Jewellers",
+  "start_url":"./",
+  "display":"standalone",
+  "background_color":"#f8f3e8",
+  "theme_color":"#f8f3e8",
+  "description":"A premium mobile-first digital experience for Prasad Jewellers, Noamundi.",
+  "icons":[{"src":"./public/favicon.svg","sizes":"any","type":"image/svg+xml"}]
+}
