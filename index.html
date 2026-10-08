@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f8f3e8">
+  <meta name="description" content="Prasad Jewellers, Noamundi — jewellery catalogue, market rates and direct customer assistance.">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./public/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./src/styles.css">
+  <title>Prasad Jewellers | Noamundi</title>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Prasad Jewellers home">
+      <span class="brand-mark">PJ</span>
+      <span><strong>Prasad Jewellers</strong><small>Noamundi</small></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+  </header>
+
+  <nav class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <a href="#rates">Today's Rates</a>
+    <a href="#catalogue">Catalogue</a>
+    <a href="#design">Design Your Jewellery</a>
+    <a href="#support">Contact</a>
+  </nav>
+
+  <main id="home">
+    <section class="hero section">
+      <div class="eyebrow">Trusted jewellery • Noamundi</div>
+      <h1>Jewellery with<br><em>meaning.</em></h1>
+      <p>Explore designs, follow market rates and tell us exactly what you have in mind.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#catalogue">Explore Catalogue</a>
+        <a class="btn btn-quiet" href="#design">Design My Jewellery</a>
+      </div>
+      <div class="hero-glow" aria-hidden="true"></div>
+    </section>
+
+    <section class="section rate-section" id="rates">
+      <div class="section-heading">
+        <div><span class="eyebrow">Market watch</span><h2>Today's Sarrafa Bhaav</h2></div>
+        <span class="live-dot">● Live-ready</span>
+      </div>
+      <div class="rate-meta"><span id="rateSource">Jamshedpur Jewellers Association</span><span id="rateUpdated">Updating…</span></div>
+      <div class="rate-grid" id="rateGrid"></div>
+      <p class="fineprint">Rates are presented for reference. Final jewellery pricing depends on purity, making charges, stones, taxes and the store quotation.</p>
+    </section>
+
+    <section class="section" id="catalogue">
+      <div class="section-heading">
+        <div><span class="eyebrow">Curated collection</span><h2>Find your piece</h2></div>
+        <span class="count">01 — 04</span>
+      </div>
+      <div class="catalogue-grid">
+        <article class="jewel-card"><div class="jewel-art ring">◌</div><span>Gold Rings</span><small>Everyday • Occasion</small></article>
+        <article class="jewel-card"><div class="jewel-art chain">⌁</div><span>Necklaces</span><small>Classic • Statement</small></article>
+        <article class="jewel-card"><div class="jewel-art earring">◉</div><span>Earrings</span><small>Lightweight • Festive</small></article>
+        <article class="jewel-card"><div class="jewel-art custom">✦</div><span>Custom Designs</span><small>Made around your idea</small></article>
+      </div>
+    </section>
+
+    <section class="section design-section" id="design">
+      <div class="glass-panel">
+        <span class="eyebrow">Your idea matters</span>
+        <h2>Design it your way.</h2>
+        <p>Have a reference from Instagram, a family design, a sketch, image or video? Send it to us and start a conversation.</p>
+        <div class="request-points">
+          <span>01 Describe</span><span>02 Share reference</span><span>03 Discuss</span>
+        </div>
+        <a class="btn btn-primary full" href="mailto:MuktiShah99@gmail.com?subject=Jewellery%20Design%20Request">Start a Design Request</a>
+      </div>
+    </section>
+
+    <section class="section support-section" id="support">
+      <span class="eyebrow">Direct assistance</span>
+      <h2>Talk to Prasad Jewellers.</h2>
+      <p>For availability, custom requirements, orders and personal assistance, reach us directly.</p>
+      <div class="support-grid">
+        <a class="support-card" href="tel:+919234276489"><b>Call</b><span>+91 92342 76489</span></a>
+        <a class="support-card" href="https://wa.me/919234276489" target="_blank" rel="noopener"><b>WhatsApp</b><span>Chat with the store</span></a>
+        <a class="support-card" href="mailto:MuktiShah99@gmail.com"><b>Email</b><span>MuktiShah99@gmail.com</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><strong>Prasad Jewellers</strong><span>Noamundi</span></div>
+    <p>© <span id="year"></span> Prasad Jewellers. Crafted for a smoother jewellery journey.</p>
+  </footer>
+
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>
